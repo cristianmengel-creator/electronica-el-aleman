@@ -4,6 +4,21 @@ import "react-photo-view/dist/react-photo-view.css";
 
 function Gallery() {
   const works = [
+     {
+    image: "/galeria/R1.jpg",
+    title: "Reparación de Smart TV",
+    description: "Diagnóstico y reparación electrónica."
+  },
+   {
+    image: "/galeria/R2.jpg",
+    title: "Reparación de Smart TV",
+    description: "Diagnóstico y reparación electrónica."
+  },
+   {
+    image: "/galeria/R3.jpg",
+    title: "Reparación de Smart TV",
+    description: "Diagnóstico y reparación electrónica."
+  },
     {
       title: "Laboratorio Electrónico",
       description: "Banco de trabajo equipado para diagnóstico y reparación electrónica.",
