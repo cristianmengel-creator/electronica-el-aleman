@@ -32,12 +32,12 @@ function Gallery() {
     {
       title: "Microsoldadura Profesional",
       description: "Reparación de placas electrónicas a nivel componente.",
-      image: "/microsoldadura.jpg",
+      image: "/galeria/microsoldadura.jpg",
     },
     {
       title: "Instrumental de Precisión",
       description: "Diagnóstico con osciloscopio e instrumental profesional.",
-      image: "/osciloscopio.jpg",
+      image: "/galeria/osciloscopio.jpg",
     },
     {
       title: "Reparación de Placas",
