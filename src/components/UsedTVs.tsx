@@ -4,50 +4,63 @@ import { motion } from "framer-motion";
 function UsedTVs() {
   const tvs = [
     {
-      brand: "Noblex Smart TV 32 pulgadas Full HD",
+      brand: "Noblex SMART TV 32 pulgadas Full HD",
       description:
-        "Con control remoto original. Reacondicionado a nuevo. $120.000",
-      image: "/tvnoblexsmart.jpg",
+        "Con control remoto original. Reacondicionado a nuevo. $110.000",
+      image: "/galeria/tvnoblexsmart.jpg",
       status: "Disponible",
       color: "bg-green-600",
       features: [
         "Revisado y probado",
         "Imagen y sonido perfectos",
-        "Con garantía",
+        "Garantía escrita",
       ],
     },
     {
-      brand: "BGH Smart TV Full HD",
+      brand: "BGH Smart TV 32 pulgadas Full HD",
       description:
         "Con control remoto. Reacondicionado a nuevo. $100.000",
-      image: "/bgh.jpg",
+      image: "/galeria/bgh.jpg",
       status: "Disponible",
       color: "bg-green-600",
       features: [
         "Revisado y probado",
         "Imagen y sonido perfectos",
-        "Con garantía",
+        "Garantía escrita",
       ],
     },
-
     {
-      brand: "Monitor LG 22 Pulgadas",
+      brand: "Monitor LG 22 pulgadas",
       description:
-        "Monitor para PC 22 pulgas entrada DVI y VGA",
-      image: "/monitorlg.jpg",
+        "Monitor para PC 22 pulgadas con entrada DVI-D y VGA. $65.000",
+      image: "/galeria/monitorlg.jpg",
       status: "Disponible",
       color: "bg-green-600",
       features: [
-        "Revisado y probado $65.000",
+        "Revisado y probado",
         "Imagen perfecta",
-        "Con garantía",
+        "Garantía escrita",
+      ],
+    },
+    {
+      brand: "Monitor LG 22 pulgadas DVI-D y VGA",
+      description:
+        "Monitor para PC reacondicionado en excelente estado. $75.000",
+      image: "/galeria/mlg.jpg",
+      status: "Disponible",
+      color: "bg-green-600",
+      features: [
+        "Revisado y probado",
+        "Imagen perfecta",
+        "Garantía escrita",
       ],
     },
   ];
-  
+
   return (
-    <section id="usados" className="bg-zinc-950 py-24">
+    <section id="usados" className="bg-zinc-950 py-20">
       <div className="max-w-7xl mx-auto px-6">
+
         <motion.h2
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -55,10 +68,7 @@ function UsedTVs() {
           viewport={{ once: true }}
           className="text-5xl font-bold text-center text-white mb-4"
         >
-          Smart TV{" "}
-          <span className="text-blue-500">
-            Reacondicionados
-          </span>
+          Smart TV Reacondicionados
         </motion.h2>
 
         <p className="text-center text-zinc-400 mb-14">
@@ -93,6 +103,7 @@ function UsedTVs() {
               </div>
 
               <div className="p-8">
+
                 <div className="flex items-center gap-3 mb-4">
                   <FaTv className="text-blue-500 text-3xl" />
 
@@ -118,18 +129,22 @@ function UsedTVs() {
                 </div>
 
                 <a
-                  href={`https://wa.me/5492236988833?text=Hola%20Electrónica%20El%20Alemán,%20quiero%20consultar%20por%20${encodeURIComponent(tv.brand)}`}
+                  href={`https://wa.me/5492236988833?text=Hola%20Electrónica%20El%20Alemán,%20quiero%20consultar%20por%20${encodeURIComponent(
+                    tv.brand
+                  )}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex justify-center items-center gap-3 bg-green-600 hover:bg-green-500 rounded-xl py-4 font-bold text-white transition"
                 >
                   <FaWhatsapp />
-                  Consultar este TV
+                  Consultar este equipo
                 </a>
+
               </div>
             </motion.div>
           ))}
         </div>
+
       </div>
     </section>
   );
