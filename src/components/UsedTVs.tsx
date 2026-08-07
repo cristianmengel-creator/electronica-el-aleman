@@ -12,18 +12,18 @@ function UsedTVs() {
       features: [
         "Revisado y probado",
         "Imagen y sonido perfectos",
-        "Garantía escrita"
+        "Con garantia"
       ]
     },
     {
-      brand: "TV BGH c/control remoto Full HD",
+      brand: "TV BGH c/control remoto Full HD. Reacondicionado a nuevo $100.00"
       image: "/bgh.jpg",
       status: "Disponible",
       color: "bg-green-600",
       features: [
        "Revisado y probado",
        "Imagen y sonido perfectos",
-       "Garantía escrita"
+       "Con garantia"
       ]
      }, 
   ];
