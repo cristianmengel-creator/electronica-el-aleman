@@ -5,8 +5,8 @@ function UsedTVs() {
 
   const tvs = [
     {
-      brand: "Samsung 43” Full HD",
-      image: "/tv.jpg",
+      brand: "Noblex 32 pulgadas smart tv c/control remoto original. Reacondicianado a nuevo $120.000” Full HD",
+      image: "/galeria/public/tvnoblexsmart.jpg",
       status: "Disponible",
       color: "bg-green-600",
       features: [
