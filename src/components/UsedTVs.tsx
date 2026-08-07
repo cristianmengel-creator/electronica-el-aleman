@@ -17,7 +17,7 @@ function UsedTVs() {
     },
     {
       brand: "TV BGH c/control remoto Full HD",
-      image: "/tvbgh",
+      image: "/tvbgh.jpg",
       status: "Disponible",
       color: "bg-yellow-600",
       features: [
