@@ -16,14 +16,15 @@ function UsedTVs() {
       ]
     },
     {
-      brand: "LG 50” 4K",
-      image: "/tv.jpg",
-      status: "Próximamente",
-      color: "bg-yellow-500",
+      brand: "TV BGH c/control remoto Full HD",
+      image: "/tvbgh",
+      status: "Disponible",
+      color: "bg-yellow-600",
       features: [
-        "En proceso de reparación",
-        "Próximamente disponible",
-        "Consultar reserva"
+       "Revisado y probado",
+       "Imagen y sonido perfectos",
+       "Garantía escrita"
+      ]
       ]
     }
   ];
