@@ -29,8 +29,22 @@ function UsedTVs() {
         "Con garantía",
       ],
     },
-  ];
 
+    {
+      brand: "Monitor LG 22 Pulgadas",
+      description:
+        "Monitor para PC 22 pulgas entrada DVI y VGA",
+      image: "/monitorlg.jpg",
+      status: "Disponible",
+      color: "bg-green-600",
+      features: [
+        "Revisado y probado $65.000",
+        "Imagen perfecta",
+        "Con garantía",
+      ],
+    },
+  ];
+  
   return (
     <section id="usados" className="bg-zinc-950 py-24">
       <div className="max-w-7xl mx-auto px-6">
