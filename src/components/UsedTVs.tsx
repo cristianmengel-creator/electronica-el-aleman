@@ -6,7 +6,7 @@ function UsedTVs() {
   const tvs = [
     {
       brand: "Noblex 32 pulgadas smart tv c/control remoto original. Reacondicianado a nuevo $120.000” Full HD",
-      image: "/galeria/public/tvnoblexsmart.jpg",
+      image: "/tvnoblexsmart.jpg",
       status: "Disponible",
       color: "bg-green-600",
       features: [
