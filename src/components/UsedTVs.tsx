@@ -17,16 +17,15 @@ function UsedTVs() {
     },
     {
       brand: "TV BGH c/control remoto Full HD",
-      image: "/tvbgh.jpg",
+      image: "/bgh.jpg",
       status: "Disponible",
-      color: "bg-yellow-600",
+      color: "bg-green-600",
       features: [
        "Revisado y probado",
        "Imagen y sonido perfectos",
        "Garantía escrita"
       ]
-      ]
-    }
+     }, 
   ];
 
 
