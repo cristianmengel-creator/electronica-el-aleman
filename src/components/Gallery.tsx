@@ -5,7 +5,7 @@ import "react-photo-view/dist/react-photo-view.css";
 function Gallery() {
   const works = [
       {
-    image: "/galeria/R1.jpg",
+    image: "/galeria/R4.jpg",
     title: "Reparación de Smart TV",
     description: "Diagnóstico y reparación electrónica."
   },
