@@ -44,7 +44,7 @@ function Location() {
                 </h3>
 
                 <p className="text-zinc-400">
-                  Av. Vélez Sardinel 524
+                  Av. Vélez Sardinel 525
                   <br />
                   Zona El Faro
                   <br />
