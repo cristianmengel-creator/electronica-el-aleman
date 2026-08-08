@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://electronica-el-aleman.vercel.app/sitemap.xml
