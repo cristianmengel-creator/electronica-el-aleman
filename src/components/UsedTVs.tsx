@@ -17,7 +17,7 @@ function UsedTVs() {
       ],
     },
     {
-      brand: "BGH Smart TV 32 pulgadas Full HD",
+      brand: "BGH TV 32 pulgadas Full HD",
       description:
         "Con control remoto. Reacondicionado a nuevo. $100.000",
       image: "/galeria/bgh.jpg",
