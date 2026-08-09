@@ -8,8 +8,8 @@ function UsedTVs() {
       description:
         "Con control remoto original. Reacondicionado a nuevo. $110.000",
       image: "/galeria/noblex.jpg",
-      status: "Disponible",
-      color: "bg-green-600",
+      status: "Vendido",
+      color: "bg-yellow-500",
       features: [
         "Revisado y probado",
         "Imagen y sonido perfectos",
