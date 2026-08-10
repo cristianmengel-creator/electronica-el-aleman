@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Reparacion {
   id_reparacion: number;
@@ -18,6 +19,7 @@ interface Reparacion {
 export default function OrderList() {
   const [reparaciones, setReparaciones] = useState<Reparacion[]>([]);
   const [filtro, setFiltro] = useState("todos");
+  const navigate = useNavigate();
 
   const obtenerDatos = async () => {
     try {
@@ -37,7 +39,7 @@ export default function OrderList() {
 
   const alternarEstado = async (id: number, estadoActual: boolean) => {
     const nuevoEstado = !estadoActual;
-    const fechaSalida = nuevoEstado ? new Date().toISOString().split('T')[0] : null;
+    const fechaSalida = nuevoEstado ? new Date().toISOString() : null;
 
     try {
       const response = await fetch(`http://localhost:5000/api/reparaciones/${id}`, {
@@ -95,12 +97,13 @@ export default function OrderList() {
                   <th className="pb-3 font-semibold">Presupuesto</th>
                   <th className="pb-3 font-semibold text-center">Estado (Clic para cambiar)</th>
                   <th className="pb-3 font-semibold">Fecha Salida</th>
+                  <th className="pb-3 font-semibold text-right pr-4">Acciones</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-zinc-800/60">
                 {listaFiltrada.length === 0 ? (
                   <tr>
-                    <td colSpan={7} className="py-8 text-center text-zinc-500">
+                    <td colSpan={8} className="py-8 text-center text-zinc-500">
                       No se encontraron registros en esta categoría.
                     </td>
                   </tr>
@@ -125,7 +128,7 @@ export default function OrderList() {
                         <button
                           type="button"
                           onClick={() => alternarEstado(rep.id_reparacion, rep.reparado)}
-                          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition shadow-sm border ${
+                          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition shadow-sm border cursor-pointer ${
                             rep.reparado
                               ? "bg-green-950/80 text-green-400 border-green-800 hover:bg-green-900"
                               : "bg-amber-950/80 text-amber-400 border-amber-800 hover:bg-amber-900"
@@ -138,6 +141,20 @@ export default function OrderList() {
                         {rep.fecha_salida
                           ? new Date(rep.fecha_salida).toLocaleDateString()
                           : "-- / -- / ----"}
+                      </td>
+                      <td className="py-4 text-right pr-2">
+                        <button
+                          type="button"
+                          onClick={() => navigate("/imprimir", { state: rep })}
+                          className="bg-zinc-800 hover:bg-zinc-700 text-zinc-300 p-2 rounded-xl transition border border-zinc-700 cursor-pointer flex items-center gap-1.5 text-xs font-bold"
+                          title="Imprimir Remito"
+                        >
+                          {/* ÍCONO EN SVG NATIVO: Inmune a errores de librerías */}
+                          <svg className="w-3.5 h-3.5 text-zinc-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://w3.org">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
+                          </svg>
+                          Remito
+                        </button>
                       </td>
                     </tr>
                   ))
