@@ -38,11 +38,11 @@ function Header() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 w-full z-50 bg-zinc-950/80 backdrop-blur-lg border-b border-zinc-800"
+      className="fixed top-0 left-0 w-full z-50 bg-zinc-950/80 backdrop-blur-lg"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* LOGO */}
 
+        {/* LOGO */}
         <a href="#inicio" className="flex items-center gap-3">
           <div className="bg-blue-600 w-12 h-12 rounded-xl flex items-center justify-center">
             <FaTools className="text-white text-2xl" />
@@ -61,7 +61,6 @@ function Header() {
         </a>
 
         {/* MENU */}
-
         <nav className="hidden lg:flex gap-7 items-center">
           {menu.map((item) => (
             <a
@@ -74,7 +73,6 @@ function Header() {
           ))}
 
           {/* MERCADO PAGO */}
-
           <a
             href="https://link.mercadopago.com.ar/electronicaelaleman"
             target="_blank"
@@ -94,16 +92,17 @@ function Header() {
         </nav>
 
         {/* WHATSAPP */}
-
         <a
           href="https://wa.me/5492236988833?text=Hola%20Electronica%20El%20Aleman"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 bg-green-600 hover:bg-green-500 px-5 py-3 rounded-xl font-bold transition"
+          className="flex items-center gap-2 bg-green-600 hover:bg-green-500 px-5 py-3 rounded-xl font-bold text-white transition"
         >
-          <FaWhatsapp />
+          <FaWhatsapp className="text-xl" />
 
-          <span className="hidden md:block">WhatsApp</span>
+          <span className="hidden md:block">
+            WhatsApp
+          </span>
         </a>
       </div>
     </motion.header>
