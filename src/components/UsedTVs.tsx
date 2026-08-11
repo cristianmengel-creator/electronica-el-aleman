@@ -7,7 +7,7 @@ function UsedTVs() {
       brand: "SMART Philips 43 pulgadas full HD",
       description:
         "Con control remoto. Reacondicionado a nuevo. $200.000",
-      image: "/galeria/tvphventa.jpg",
+      image: "/galeria/tvph.jpg",
       status: "Disponible",
       color: "bg-green-500",
       features: [

@@ -47,7 +47,7 @@ function Gallery() {
     {
       title: "Smart TV",
       description: "Reparación y mantenimiento de televisores.",
-      image: "/tvph1.jpg",
+      image: "galeria/tvphventa.jpg",
     },
     {
       title: "Servicio Técnico",
