@@ -15,12 +15,12 @@ function Gallery() {
     description: "Diagnóstico y reparación electrónica."
   },
    {
-    image: "/galeria/R2.jpg",
+    image: "/galeria/led.jpg",
     title: "Reparación de Smart TV",
     description: "Diagnóstico y reparación electrónica."
   },
    {
-    image: "/galeria/R3.jpg",
+    image: "/galeria/tv.jpg",
     title: "Reparación de Smart TV",
     description: "Diagnóstico y reparación electrónica."
   },
@@ -47,7 +47,7 @@ function Gallery() {
     {
       title: "Smart TV",
       description: "Reparación y mantenimiento de televisores.",
-      image: "/tv.jpg",
+      image: "/tvph.jpg",
     },
     {
       title: "Servicio Técnico",

@@ -6,12 +6,12 @@ function UsedTVs() {
      {
       brand: "SMART Philips 43 pulgadas full HD",
       description:
-        "Con control remoto. Reacondicionado a nuevo. $180.000",
-      image: "/galeria/armadophilips.jpg",
-      status: "En proceso en reparacion",
-      color: "bg-yellow-500",
+        "Con control remoto. Reacondicionado a nuevo. $200.000",
+      image: "/galeria/tvphventa.jpg",
+      status: "Disponible",
+      color: "bg-green-500",
       features: [
-        "en prueva",
+        "Revisado y provado",
         "Imagen y sonido perfectos",
         "Garantía escrita",
       ],
@@ -23,7 +23,7 @@ function UsedTVs() {
         "Con control remoto original. Reacondicionado a nuevo. $110.000",
       image: "/galeria/noblex.jpg",
       status: "Vendido",
-      color: "bg-yellow-500",
+      color: "bg-red-500",
       features: [
         "Revisado y probado",
         "Imagen y sonido perfectos",
@@ -33,10 +33,10 @@ function UsedTVs() {
     {
       brand: "BGH TV 32 pulgadas Full HD",
       description:
-        "Con control remoto + Roku SMAT Reacondicionado a nuevo. $130.000",
+        "Con control remoto + Roku TV Reacondicionado a nuevo. $130.000",
       image: "/galeria/bgh.jpg",
       status: "Disponible",
-      color: "bg-green-600",
+      color: "bg-green-500",
       features: [
         "Revisado y probado",
         "Imagen y sonido perfectos",
@@ -49,7 +49,7 @@ function UsedTVs() {
         "Monitor para PC 22 pulgadas con entrada DVI-D y VGA. $65.000",
       image: "/galeria/mlg.jpg",
       status: "Disponible",
-      color: "bg-green-600",
+      color: "bg-green-500",
       features: [
         "Revisado y probado",
         "Imagen perfecta",
