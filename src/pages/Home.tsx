@@ -17,16 +17,21 @@ function Home() {
     <main>
       <Header />
 
+      {/* INICIO */}
       <section
         id="inicio"
-        className="min-h-screen flex items-center justify-center text-center px-6 bg-cover bg-center relative"
+        className="min-h-screen flex items-center justify-center text-center px-6 pt-24 bg-cover bg-center relative"
         style={{
           backgroundImage: "url('/laboratorio.jpg')",
         }}
       >
+        {/* FONDO OSCURO */}
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-black/50"></div>
 
+        {/* CONTENIDO */}
         <div className="relative z-10 max-w-5xl">
+
+          {/* ETIQUETA */}
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -36,6 +41,7 @@ function Home() {
             Mar del Plata · Servicio Técnico Especializado
           </motion.span>
 
+          {/* TITULO */}
           <motion.h1
             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
@@ -46,6 +52,7 @@ function Home() {
             <span className="text-blue-500">El Alemán</span>
           </motion.h1>
 
+          {/* SUBTITULO */}
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -55,6 +62,7 @@ function Home() {
             Reparación de Smart TV, celulares y notebooks
           </motion.h2>
 
+          {/* DESCRIPCION */}
           <p className="mt-8 max-w-4xl mx-auto text-lg md:text-xl text-zinc-300 leading-8">
             Somos especialistas en{" "}
             <strong>reparación de Smart TV</strong>,{" "}
@@ -65,6 +73,7 @@ function Home() {
             precisión.
           </p>
 
+          {/* ESPECIALIDADES */}
           <div className="flex flex-wrap justify-center gap-4 mt-10">
             <span className="bg-zinc-900/80 border border-zinc-700 px-5 py-3 rounded-full text-white">
               Smart TV
@@ -83,12 +92,14 @@ function Home() {
             </span>
           </div>
 
+          {/* SEGUNDA DESCRIPCION */}
           <p className="mt-8 max-w-3xl mx-auto text-base md:text-lg text-zinc-400 leading-7">
             Reparación electrónica profesional en Mar del Plata,
             especializada en diagnóstico de placas y reparación a nivel
             componente.
           </p>
 
+          {/* BOTON WHATSAPP */}
           <motion.a
             initial={{ opacity: 0, scale: 0.85 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -101,12 +112,14 @@ function Home() {
             Solicitar presupuesto
           </motion.a>
 
+          {/* ESTADISTICAS */}
           <div className="mt-16">
             <Stats />
           </div>
         </div>
       </section>
 
+      {/* SECCIONES */}
       <Services />
 
       <WhyUs />
