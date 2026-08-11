@@ -3,6 +3,20 @@ import { motion } from "framer-motion";
 
 function UsedTVs() {
   const tvs = [
+     {
+      brand: "SMART Philips 43 pulgadas full HD",
+      description:
+        "Con control remoto. Reacondicionado a nuevo. $180.000",
+      image: "/galeria/armadophilips.jpg",
+      status: "En proceso en reparacion",
+      color: "bg-yellow-500",
+      features: [
+        "en prueva",
+        "Imagen y sonido perfectos",
+        "Garantía escrita",
+      ],
+    },
+    
     {
       brand: "Noblex SMART TV 32 pulgadas Full HD",
       description:
@@ -19,7 +33,7 @@ function UsedTVs() {
     {
       brand: "BGH TV 32 pulgadas Full HD",
       description:
-        "Con control remoto. Reacondicionado a nuevo. $100.000",
+        "Con control remoto + Roku SMAT Reacondicionado a nuevo. $130.000",
       image: "/galeria/bgh.jpg",
       status: "Disponible",
       color: "bg-green-600",
