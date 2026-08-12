@@ -8,8 +8,8 @@ function UsedTVs() {
       description:
         "Con control remoto. Reacondicionado a nuevo. $200.000",
       image: "/galeria/tvph.jpg",
-      status: "Disponible",
-      color: "bg-green-500",
+      status: "Vendido",
+      color: "bg-red-500",
       features: [
         "Revisado y provado",
         "Imagen y sonido perfectos",
