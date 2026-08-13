@@ -35,8 +35,8 @@ function UsedTVs() {
       description:
         "Con control remoto + Roku TV Reacondicionado a nuevo. $130.000",
       image: "/galeria/bgh.jpg",
-      status: "Disponible",
-      color: "bg-green-500",
+      status: "Vendido",
+      color: "bg-red-50",
       features: [
         "Revisado y probado",
         "Imagen y sonido perfectos",
